@@ -42,16 +42,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\ISolver.cs" />
-    <Compile Include="ProblemSolving\CompareTheTriplets.cs" />
-    <Compile Include="ProblemSolving\SimpleArraySum.cs" />
-    <Compile Include="ProblemSolving\VeryBigSum.cs" />
+    <Compile Include="ProblemSolving\Strings\CamelCase.cs" />
+    <Compile Include="ProblemSolving\Strings\StrongPassword.cs" />
+    <Compile Include="ProblemSolving\Strings\TwoCharacters.cs" />
+    <Compile Include="ProblemSolving\Warmup\BirthDayCakeCandles.cs" />
+    <Compile Include="ProblemSolving\Warmup\CompareTheTriplets.cs" />
+    <Compile Include="ProblemSolving\Warmup\DigonalDifferences.cs" />
+    <Compile Include="ProblemSolving\Warmup\MinMaxSum.cs" />
+    <Compile Include="ProblemSolving\Warmup\PlusMinus.cs" />
+    <Compile Include="ProblemSolving\Warmup\SimpleArraySum.cs" />
+    <Compile Include="ProblemSolving\Warmup\StairCase.cs" />
+    <Compile Include="ProblemSolving\Warmup\TimeConversion.cs" />
+    <Compile Include="ProblemSolving\Warmup\VeryBigSum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThirtyDaysOfCode\DayOne.cs" />
     <Compile Include="ThirtyDaysOfCode\DayZero.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

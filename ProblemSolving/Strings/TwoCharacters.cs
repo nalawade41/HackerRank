@@ -1,17 +1,18 @@
-﻿using System;
+﻿using HackerRank.Interface;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HackerRank
+namespace HackerRank.ProblemSolving.Strings
 {
-    class Program
+    class TwoCharacters: ISolver
     {
-        static void Main(string[] args)
+        public void Solve()
         {
-            //TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
             int l = Convert.ToInt32(Console.ReadLine().Trim());
 
@@ -19,12 +20,13 @@ namespace HackerRank
 
             int result = alternate(s);
 
-            //textWriter.WriteLine(result);
+            textWriter.WriteLine(result);
 
-            //textWriter.Flush();
-            //textWriter.Close();
+            textWriter.Flush();
+            textWriter.Close();
         }
-        static int alternate(string s)
+
+        private int alternate(string s)
         {
             int count = 0;
             for (int i = 0; i < s.Length; i++)
